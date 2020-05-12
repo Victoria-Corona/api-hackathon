@@ -21,6 +21,9 @@ $.ajax({
   success: logResult,
   error: logError
 })
-}
 
+}
+  start() {
+    this.getImage;
+  }
 }
