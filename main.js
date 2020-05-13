@@ -1,2 +1,2 @@
-var app = new App();
+var app = new App(imageContainer);
 app.start();
