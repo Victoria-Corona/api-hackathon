@@ -15,16 +15,16 @@ logError(err) {
 getImage (){
 $.ajax({
   method: "GET",
-  url: "https://pixabay.com/api/?key=" + pixabayAPIKey + "&q=nevada+tree&category=nature&image_type=photo",
-  success: logResult,
-  error: logError
+  url: "https://pixabay.com/api/?key=" + pixabayAPIKey + "&q=yellow+flower&image_type=photo",
+  success: this.logResult,
+  error: this.logError
 })
 }
 
 // getLocation(){
 //   $.ajax({
 //     method"GET",
-//     url: google,
+//     url: https://maps.googleapis.com/maps/api/js
 //     data: {
 //        location: "a location"
 //      }
