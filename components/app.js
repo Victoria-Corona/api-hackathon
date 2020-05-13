@@ -2,12 +2,10 @@ class App {
 constructor (imageTable){
   this.logResult = this.logResult.bind(this);
   this.logError = this.logError.bind(this);
-  this.imageTable = imageTable;
+
 }
 logResult(result) {
   console.log("Success!", result)
-
-  this.imageTable.updateImages(result)
 }
 
 logError(err) {
@@ -21,8 +19,21 @@ $.ajax({
   success: logResult,
   error: logError
 })
-
 }
+
+// getLocation(){
+//   $.ajax({
+//     method"GET",
+//     url: google,
+//     data: {
+//        location: "a location"
+//      }
+//     success: logResult,
+//     error: logError
+//   })
+// }
+
+
   start() {
     this.getImage;
   }
