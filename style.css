@@ -1,0 +1,27 @@
+#map {
+        height: 100%;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .map-container {
+        margin: auto;
+        height: 800px;
+        width: 1000px;
+      }
+
+      form {
+        margin: auto;
+      }
+
+      button {
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(107, 203, 216);
+      }
