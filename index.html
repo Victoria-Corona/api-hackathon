@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="components/config.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+  </head>
+  <body>
+
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+
+    <form>
+      <input type="text" name="location" placeholder="Where do you want to go?">
+      <button type="submit">GO</button>
+    </form>
+    <div class="image-box">
+      <div class="image-container"></div>
+    </div>
+
+
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 36.778, lng: -119.417 },
+        zoom: 3,
+        disableDefaultUI: true,
+      });
+    }
+
+  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjWAXOwEOI2hrgSnNr0eNmPs-l_ZFY7ko&libraries=places&callback=initMap" async
+        defer></script>
+        <script src="components/app.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
