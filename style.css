@@ -1,5 +1,12 @@
-#map {
+      *{
+        font-variant-caps: small-caps;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      #map {
         height: 100%;
+        border-radius: 25px 25px 25px 25px;
       }
 
       html,
@@ -8,35 +15,57 @@
         margin: 0;
         padding: 0;
         display: flex;
+        justify-content: center;
       }
 
       .map-container {
         margin: auto;
         height: 800px;
-        width: 1000px;
+        width: 800px;
       }
 
-      form {
+      form,
+      .form-container{
         margin: auto;
       }
 
       button {
+        transition: background-color 1s ease;
         border-radius: 25px;
-        background-color: rgb(255, 255, 255);
-        border-color: rgb(107, 203, 216);
+        background: none;
+        border: 1px solid rgb(0, 0, 0);
+      }
+
+      button:hover{
+        background-color: rgb(185, 185, 185);
+      }
+
+      input {
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0);
+        border-radius: 5px;
       }
 
       .image-box {
         height: 100px;
         width: 100px;
         margin: auto;
+        margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
-        border-style: solid;
+        /* border-style: solid; */
       }
 
       .image-container {
         display: flex;
         flex-wrap: wrap;
-        overflow-x: scroll;
+        width: 250px;
+        height: 100px;
+        overflow: hidden;
+        overflow-y: scroll;
+       }
+
+      .container-all {
+        display: flex;
+        flex-wrap: flex;
       }
